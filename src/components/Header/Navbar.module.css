@@ -18,7 +18,9 @@
     color: white;
     margin-left: 10%;
   }
-  
+img{
+  width: 100%;
+}
   .cartButton {
     padding: 10px 20px;
     background-color: #9b0606;
@@ -268,9 +270,13 @@ fill: white;
       margin: 0 auto;
     }
   
+    
     .totalAmount {
       margin-top: 20px;
     }
+    .emptyCart{
+    
+    }  
   }
   .removeButton{
     background-color: #c70e0e;
@@ -280,4 +286,4 @@ fill: white;
   border-radius: 10px !important;
   cursor: pointer;
   margin-right: 10px
-  }    
+  }  

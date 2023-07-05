@@ -1,0 +1,282 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f30f0f;
+    
+  }
+  
+  .navbarLeft {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+  }
+  
+  .navbarBrand {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10%;
+  }
+  
+  .cartButton {
+    padding: 10px 20px;
+    background-color: #9b0606;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    margin-top: -4px;
+    
+  }
+ 
+  /* .cartItems {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: antiquewhite; 
+
+  }
+  
+  .cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  } */
+  .cartItems {
+    background-color: #fdf7f7;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    margin-top: 10% !important;
+  }
+  
+  
+  .cartFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: auto;
+  }
+  
+  .totalAmount {
+    font-weight: bold;
+    margin-right: auto;
+  }
+  
+  .closeButton {
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius: 30px !important;
+
+  }
+  
+  .orderButton {
+    background-color: #a40909;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 30px !important;
+    cursor: pointer;
+  }
+  .cartOverlay {
+
+    position: fixed;
+  
+    top: 0;
+  
+    right: 0;
+  
+    bottom: 0;
+  
+    left: 0;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    background-color: rgba(3, 2, 2, 0.5);
+    margin-top: -35% !important;
+z-index: 1;
+  }
+  .cart {
+fill: white; 
+
+ }
+ .itemInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quantityControl {
+  display: flex;
+  align-items: center;
+}
+
+.quantityControl button {
+  margin: 0 5px;
+}.buttonContainer {
+  display: flex;
+}
+
+.buttonContainer button {
+  margin-right: 10px;
+}.quantityControl {
+  display: flex;
+  align-items: center;
+}
+
+.quantityControl button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #c30909;
+  color: #fcf5f5;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quantityControl button:first-child {
+  margin-right: 5px;
+}
+.smallCart {
+  width: 1.2rem;
+  height: 1.3rem;
+}.cartFooter {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.closeButton {
+  background-color: #b60c0c;
+  color: #fbf5f5;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Add margin to separate the buttons */
+}
+
+.orderButton {
+  background-color: #b50808;
+  color: #f1eded;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.totalAmount{
+  margin-top: 10%;
+}
+.totalAmountText {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.totalAmount {
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+}
+
+.cartItems ul {
+  list-style: none;
+  padding: 0;
+  font-size: large;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.cartItems ul li {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cartItems ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;}
+  .navbarRight{
+    width: 20%;    font-size: large;
+  }
+  .cartCount {
+    background-color: #e41d1d;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 14px;  
+    margin-right: 5px;
+
+  }
+  .navbarRight {
+    width: 15%; 
+    font-size: large;
+    padding: 20px !important;
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+      align-items: stretch;
+      display: flex;
+    }
+  
+    .navbarLeft {
+      margin-bottom: 10px;
+    }
+  
+    .navbarBrand {
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .navbarRight {
+      width: 40%;
+      margin-top: 10px;
+
+    }
+  
+    .cartButton {
+      margin-top: 10px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .cartItems {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .totalAmount {
+      margin-top: 20px;
+    }
+  }
+  .removeButton{
+    background-color: #c70e0e;
+    color: #fff6f6;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px !important;
+  cursor: pointer;
+  margin-right: 10px
+  }    

@@ -1,0 +1,17 @@
+.informationBox {
+  background-color: #12161a;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    opacity:90%;
+
+}
+
+.paragraph {
+  margin-bottom: 10px;
+color: aliceblue;
+font-size: larger;
+}
